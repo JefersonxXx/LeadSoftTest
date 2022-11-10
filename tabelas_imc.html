@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style_tabela.css" />
+
+    
+</head>
+
+<body >
+    
+    <p class="top"><img src="img/leadsoft_logotipo registrado_preenchimento oficial escuro.svg" style="float:left"; width="20%">Seja Bem Vindo!</p>
+    <p class="link">
+        
+        <a href="login.html">sair</a>
+
+      </p>
+
+    <div id="dfPessoas">
+
+         
+            <p class="Adicionar">    
+                         
+
+            <a href="#abrirModal">Inserir</a> </p>
+            
+
+            </p> 
+         
+
+            <div id="abrirModal" class="modal">
+
+             <a href="#fechar" title="Fechar" class="fechar">x</a>           
+         
+             <form name="fPessoas">
+                <label>Nome</label> </br>
+                <input type="text" name="txtNome" > </br>
+                <label>Sobrenome</label> </br>
+                <input type="text" name="txtSobrenome" ></br>
+                <label>Altura</label> </br>
+                <input type="text" name="txtAltura" ></br>
+                <label>E-mail</label> </br></br>
+                <input type="text" name="txtEmail" ></br>
+                <label>Sexo</label> </br>
+                <input type="text" name="txtSexo" ></br></br>
+                <input type="button" value="Adicionar Pessoa" onclick="cadPessoa(txtNome.value, txtSobrenome.value, txtAltura.value, txtEmail.value, txtSexo.value)"> </br></br>
+            </form>
+        </div>  
+        
+    </div>
+        
+    </br></br>
+    <div id="dtPessoas">
+        <table id="tabela_imc">
+            <thead>
+                <tr>
+                    <td>CODIGO</td>
+                    <td>NOMECOMPLETO</td>
+                    <td>IDADE</td>
+                    <td>ALTURA</td>
+                    <td>PESO</td>
+                    <td>IMC</td>
+                </tr>
+            </thead>
+        </table>
+    </div>
+
+    <script type="text/javascript" src="scripts/jsTabela.js"></script>
+  </body>
+</html>

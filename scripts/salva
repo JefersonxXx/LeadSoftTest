@@ -1,0 +1,34 @@
+var pessoas, index;
+
+
+    prenchCamposForm();{
+
+    }
+
+function alPessoa(Nome_Completo, Idade, Altura, Peso, IMC){
+
+pessoas.rows[index].cells[1].innerHTML = Nome_Completo;
+pessoas.rows[index].cells[2].innerHTML = Idade;
+pessoas.rows[index].cells[3].innerHTML = Altura;
+pessoas.rows[index].cells[4].innerHTML = Peso;
+pessoas.rows[index].cells[5].innerHTML = IMC;
+
+}
+
+function prenchCamposForm();{
+
+    for(var i=0; i < pessoas.rows.lenght; i++){
+
+        pessoas.rows[i].onclick = function(){
+
+            index = this.rowsIndex;
+                document.getElementById("txtCodigo").value = pessoas.row[index].cell[0].innerText;
+                document.getElementById("txtNome_Completo").value = pessoas.row[index].cell[1].innerText;
+                document.getElementById("txtIdade").value = pessoas.row[index].cell[2].innerText;
+                document.getElementById("txtAltura").value = pessoas.row[index].cell[3].innerText;
+                document.getElementById("txtPeso").value = pessoas.row[index].cell[4].innerText;
+                document.getElementById("txtIMC").value = pessoas.row[index].cell[5].innerText;
+
+        }
+    }
+};
